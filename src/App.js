@@ -1,16 +1,19 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home';
+import ProductsData from './data/Products';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import itemId from './pages/Item';
+import categoryId from './pages/Category';
+
 
 const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <ItemListContainer greeting="Bienvenido a mi proyecto de React para la comision 54965" />
+      <Home productsData={ProductsData} />
     </div>
   );
-};
+}
 
 export default App;

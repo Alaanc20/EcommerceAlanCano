@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Products from '../data/Products';
 
 const CartWidget = () => {
     return (
@@ -13,7 +14,7 @@ const CartWidget = () => {
             }}
         >
             <FontAwesomeIcon icon={faShoppingCart} />
-            <span>5</span>
+            <span>{Products.length}</span>
         </div>
     );
 };

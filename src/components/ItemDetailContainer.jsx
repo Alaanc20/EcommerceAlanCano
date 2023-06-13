@@ -1,13 +1,16 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import Products from '../data/Products';
 import './ProductCard.css'; 
-const ItemListContainer = ({ productsData }) => {
+
+
+const ItemListContainer = () => {
   return (
-    <div>
-      {productsData.map(product => (
+    <>
+      {Products.map(product => (
         <ProductCard key={product.id} productData={product} />
       ))}
-    </div>
+    </>
   );
 };
 

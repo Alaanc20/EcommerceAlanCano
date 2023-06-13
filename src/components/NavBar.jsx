@@ -3,25 +3,26 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Image from 'react-bootstrap/Image'; 
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-      <Navbar.Brand href="#home">
-          <img src="/Lebron.png" alt="Logo" style={{ width: '100px', height: 'auto' }} />
+        <Navbar.Brand href="/">
+          <Link to="/">
+            <img src="/Lebron.png" alt="Logo" style={{ width: '100px', height: 'auto' }} />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#about">Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action1">Zapatillas</NavDropdown.Item>
-              <NavDropdown.Item href="#action2">Indumentaria</NavDropdown.Item>
-              <NavDropdown.Item href="#action3">Accesorios</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Remeras">Remeras</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Pantalones">Pantalones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/category/Zapatillas">Zapatillas</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <CartWidget />
