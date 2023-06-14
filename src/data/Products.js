@@ -8,8 +8,7 @@ const ProductsData = [
         stock: 7,
         brand: "Adidas",
         category: "Remeras",
-        thumbnail: "https://example.com/thumbnail1.jpg",
-        image: "https://example.com/image1.jpg"
+        image: process.env.PUBLIC_URL + "/rem1.png"
     },
     {
         id: 2,
@@ -20,8 +19,7 @@ const ProductsData = [
         stock: 5,
         brand: "Nike",
         category: "Pantalones",
-        thumbnail: "https://example.com/thumbnail2.jpg",
-        image: "https://example.com/image2.jpg"
+        image: process.env.PUBLIC_URL + "/pan1.png"
     },
     {
         id: 3,
@@ -32,20 +30,18 @@ const ProductsData = [
         stock: 10,
         brand: "Nike",
         category: "Zapatillas",
-        thumbnail: "https://example.com/thumbnail3.jpg",
-        image: "https://example.com/image3.jpg"
+        image: process.env.PUBLIC_URL + "/zap1.png"
     },
     {
         id: 4,
         title: "Remera Puma Essential",
-        description: "Remera básica para uso diario. y el mejor diseño",
+        description: "Remera básica para uso diario.",
         price: 29.99,
         rating: 3.8,
         stock: 3,
         brand: "Puma",
         category: "Remeras",
-        thumbnail: "https://example.com/thumbnail4.jpg",
-        image: "https://example.com/image4.jpg"
+        image: process.env.PUBLIC_URL + "/rem2.png"
     },
     {
         id: 5,
@@ -56,8 +52,7 @@ const ProductsData = [
         stock: 8,
         brand: "Adidas",
         category: "Pantalones",
-        thumbnail: "https://example.com/thumbnail5.jpg",
-        image: "https://example.com/image5.jpg"
+        image: process.env.PUBLIC_URL + "/pan2.png"
     },
     {
         id: 6,
@@ -68,8 +63,7 @@ const ProductsData = [
         stock: 5,
         brand: "Adidas",
         category: "Zapatillas",
-        thumbnail: "https://example.com/thumbnail6.jpg",
-        image: "https://example.com/image6.jpg"
+        image: process.env.PUBLIC_URL + "/zap2.png"
     },
     {
         id: 7,
@@ -80,8 +74,7 @@ const ProductsData = [
         stock: 12,
         brand: "Nike",
         category: "Remeras",
-        thumbnail: "https://example.com/thumbnail7.jpg",
-        image: "https://example.com/image7.jpg"
+        image: process.env.PUBLIC_URL + "/rem3.png"
     },
     {
         id: 8,
@@ -92,8 +85,7 @@ const ProductsData = [
         stock: 9,
         brand: "Puma",
         category: "Pantalones",
-        thumbnail: "https://example.com/thumbnail8.jpg",
-        image: "https://example.com/image8.jpg"
+        image: process.env.PUBLIC_URL + "/pan3.png"
     },
     {
         id: 9,
@@ -104,8 +96,7 @@ const ProductsData = [
         stock: 8,
         brand: "Puma",
         category: "Zapatillas",
-        thumbnail: "https://example.com/thumbnail9.jpg",
-        image: "https://example.com/image9.jpg"
+        image: process.env.PUBLIC_URL + "/zap3.png"
     },
     {
         id: 10,
@@ -116,8 +107,7 @@ const ProductsData = [
         stock: 6,
         brand: "Under Armour",
         category: "Remeras",
-        thumbnail: "https://example.com/thumbnail10.jpg",
-        image: "https://example.com/image10.jpg"
+        image: process.env.PUBLIC_URL + "/rem4.png"
     },
     {
         id: 11,
@@ -128,8 +118,7 @@ const ProductsData = [
         stock: 4,
         brand: "Nike",
         category: "Pantalones",
-        thumbnail: "https://example.com/thumbnail11.jpg",
-        image: "https://example.com/image11.jpg"
+        image: process.env.PUBLIC_URL + "/pan4.png"
     },
     {
         id: 12,
@@ -140,8 +129,7 @@ const ProductsData = [
         stock: 4,
         brand: "Skechers",
         category: "Zapatillas",
-        thumbnail: "https://example.com/thumbnail12.jpg",
-        image: "https://example.com/image12.jpg"
+        image: process.env.PUBLIC_URL + "/zap4.png"
     }
 ];
 

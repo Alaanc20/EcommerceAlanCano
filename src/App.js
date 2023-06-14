@@ -1,18 +1,22 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import ProductsData from './data/Products';
+import Category from './pages/Category';
+import Item from './pages/Item';
 import NavBar from './components/NavBar';
-import itemId from './pages/Item';
-import categoryId from './pages/Category';
+
 
 
 const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-      <Home productsData={ProductsData} />
-    </div>
+    <Router>
+    <NavBar />
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:categoryId" element={<Category />} />
+        <Route path="/item/:itemId" element={<Item />} />
+    </Routes>
+</Router>
   );
 }
 
