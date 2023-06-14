@@ -1,17 +1,15 @@
 import React from 'react';
-import ProductCard from './ProductCard';
-import Products from '../data/Products';
-import './ProductCard.css'; 
+import ItemDetailCard from './ItemDetailCard'; 
+import ProductsData from '../data/Products';
+import { useParams } from 'react-router-dom';
 
+const ItemDetailContainer = () => {
+  const { itemId } = useParams();
+  const productFilteredById = ProductsData.find((product) => product.id === parseInt(itemId));
 
-const ItemListContainer = () => {
   return (
-    <>
-      {Products.map(product => (
-        <ProductCard key={product.id} productData={product} />
-      ))}
-    </>
+    <ItemDetailCard product={productFilteredById} />
   );
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;

@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const Item = () => {
   const { itemId } = useParams();
-  const productFilteredById = ProductsData.find((product) => product.id === parseInt(itemId));
+  const productFilteredById = ProductsData.find(product => product.id === parseInt(itemId));
 
   return (
     <ItemDetailContainer productData={productFilteredById} />
