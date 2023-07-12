@@ -1,0 +1,81 @@
+.responsive-table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(71, 83, 250);
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+}
+.columnContainer{
+  display: flex;
+  margin-bottom: 3rem;
+}
+.notProducts{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(110, 71, 250);
+  color: white;
+  border-radius: 5px;
+}
+.total{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  background-color: rgb(104, 71, 250);
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+
+}
+.column{
+  flex-basis: 50%; 
+  padding: 25px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.responsive-table th,
+.responsive-table td {
+  padding: 8px;
+  text-align: left;
+}
+.responsive-table tr{
+    border-bottom: 1px solid rgba(97, 218, 251, 0.479);
+
+}
+.responsive-table img{
+    border-radius: 5px;
+    max-width: 250px;
+    min-width: 20%;
+    overflow: hidden;
+    height: auto;
+    display: block;
+    margin: 0 auto;}
+
+@media (max-width: 767px) {
+    .responsive-table th,
+    .responsive-table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .responsive-table thead tr {
+      display: none;
+    }
+  
+    .responsive-table tbody tr {
+      margin-bottom: 20px;
+    }
+  
+    .responsive-table tbody tr:last-child {
+      margin-bottom: 0;
+    }
+  
+    .responsive-table td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 50%;
+      margin-bottom: 5px;
+    }
+  }

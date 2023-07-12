@@ -1,0 +1,25 @@
+
+h4{
+    color: #fa7647;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+}
+.Button{
+    text-decoration: none;
+    color: rgb(104, 71, 250);
+    border-color: transparent;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+    background-color: #9cdbeb;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(156, 219, 235);
+    border-radius: 2px;
+}
+.Button:hover{
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(74, 71, 250);
+}
+.Button:active{
+    background-color: #55b3cb;
+}
+.contador{
+    text-align: right;
+}

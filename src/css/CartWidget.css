@@ -1,0 +1,20 @@
+
+.botoncarro{
+    padding: 5px;
+    color: #7d47fa;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+    background-color: #9cdbeb;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #9cdbeb;
+    border-color: transparent;
+    border-radius: 2px;
+
+}
+
+.botoncarro:hover{
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #6847fa;
+    transition: 0.7s;
+}
+.quantity{
+    text-decoration: none;
+}

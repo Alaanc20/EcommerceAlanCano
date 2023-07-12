@@ -1,0 +1,32 @@
+.card{
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(89, 71, 250);
+}
+.card:hover{
+    box-shadow: 10px 10px 20px  rgb(71, 89, 250);
+    translate: -5px -5px 0;
+    transition: .3s;
+}
+.card:not(:hover){
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(74, 71, 250);
+    transition: 0.3s;
+}
+.card-img-top{
+    height: 200px;  
+    width: auto;
+    object-fit: cover;
+}
+.card-body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    font-size: medium;
+}
+.Option{
+    margin-left: 9rem;
+    padding: 0.5rem;
+}
+.price{
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+    color: rgb(250, 118, 71);
+}

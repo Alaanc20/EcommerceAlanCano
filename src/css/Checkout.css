@@ -1,0 +1,61 @@
+.checkoutTitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #9cdbeb;
+    color: rgb(43, 18, 184);
+    width: 25rem;
+    margin: 10px auto 20px auto;
+    border-radius: 15px 15px 15px 15px ;
+
+
+}
+.form{
+    background-color: #9cdbeb;
+    text-align: center;
+    width: 20rem;
+    margin: auto;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(83, 71, 250);
+    border-radius: 5px;
+
+}
+.mb-3{
+    width: fit-content;
+    margin: auto;
+}
+.Texto{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #9cdbeb;
+    color: white;
+}
+button{
+    margin-bottom: 10px;
+}
+.Completar{
+    width: 95%;
+    margin: auto;
+}
+.checkout{
+    display: block;
+    width: 100px;
+    margin: 1rem;
+    background-color: rgba(149, 71, 250, 0.947);
+}
+@media (max-width: 767px) {
+.checkoutTitle{
+    width: 90%;
+}
+.form{
+    width: 60%;
+
+}
+.checkout{
+    text-align: left;
+    margin: 1rem;
+    background-color: rgba(125, 71, 250, 0.947);
+    width: 88px;
+}
+}

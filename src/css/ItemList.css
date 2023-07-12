@@ -1,0 +1,21 @@
+.ListGroup{
+    display: grid;
+    grid-template-columns: repeat(3, 20rem);
+    grid-gap: 25px;
+}
+.ListGroupMobile{
+
+    margin: 2rem;
+    margin-bottom: 100px;
+
+}
+
+.blocks-wrapper{
+    margin-left: 38rem;
+    margin-top: 10rem;
+}
+.blocks-wrapper-mobile{
+    margin-left: 190%;
+    margin-top: 50%;
+
+}

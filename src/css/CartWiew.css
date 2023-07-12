@@ -1,0 +1,62 @@
+.CartViewContainer{
+    margin: 0 0 0 7rem;
+    width: 18rem;
+    height: 30rem;
+    position: sticky;
+    top: 130px;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(74, 71, 250);
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.CartTitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    padding: 0.5rem;
+
+}
+.SVGCart{
+    color: #9cdbeb;
+    width: 50px;
+    height: 50px;
+}
+
+.CartViewContainer:hover .SVGCart{
+    transform: translateX(5rem);
+    transition: .9s;
+}
+.CartViewContainer:not(:hover) .SVGCart{
+    transition: 1s;
+}
+.tableRowCartView{
+    height: 22rem;
+    width: 105%;
+
+    overflow-y: scroll;
+}
+.tableRowCartView li{
+    border-bottom: 1px solid rgba(97, 218, 251, 0.479);
+}
+.tableRowCartView::-webkit-scrollbar {
+    border-radius: 5px;
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: rgb(97, 218, 251);
+    border-radius: 10px;
+}
+.CartViewTotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.totalFont{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.CartViewTotal .price{
+    background-color: rgb(134, 71, 250);
+    color: white;
+    border-radius: 10px;
+}

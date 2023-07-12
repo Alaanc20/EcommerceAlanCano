@@ -1,0 +1,29 @@
+.greetingContainer{
+    background-color: #5947fa;
+    display: inline-block;
+    padding-top: 3px;
+    height: 50px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 1.5rem;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(83, 71, 250);
+    padding: 0.2rem .5rem;
+    
+}
+.container{
+    margin: 1.5rem;
+}
+.containerMobile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 1365px) {
+    .cartCol{
+        display: none;
+    }
+
+}

@@ -1,0 +1,112 @@
+.CardItem{
+    box-shadow: 0 0 0 6px white, 0 0 0 12px rgb(88, 24, 0);
+    border-radius: 5px;
+    height: 70vh;
+    width: 200vh;
+    margin-left: 2rem;
+    margin: 3rem;
+    background-color: white;
+    max-width: 93%;
+
+}
+.ItemImg{
+    float: left;
+    border-radius: 5px;
+    height: 70vh;
+    max-width: 700px;
+    overflow-y: hidden ;
+    margin-right: 2rem;
+}
+.ItemHeader{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    font-size: xx-large;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+.InfoDescription{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: .5rem;
+
+}
+.Info{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    text-align: justify;
+    font-size: medium;
+    margin-bottom: .5rem;
+
+}
+.InfoPrice{
+    font-family: 'Dosis', sans-serif;
+    font-size: xx-large;
+    color: #7747fa;
+    text-align: center;
+    margin-bottom: .5rem;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colDiv{
+    display: 'flex';
+    flex-direction: 'row';
+}
+.one{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.backButton{
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+}
+.btn{
+    background-color:#dfdfdf;
+    border-color: #1e2dff;
+}
+.btn:hover{
+    background-color:#1e2dff;
+    border-color: #1e2dff;
+}
+
+@media screen and (max-width: 1315px) {
+    .CardItem{
+        height: fit-content;
+        margin-left: 4%;
+        }
+    .ItemImg{
+        max-width: 100%;
+        height: fit-content;
+        overflow-y: hidden ;
+
+    }
+    .Info{
+        font-size: 1.2rem;
+    }
+    .InfoDescription{
+    font-size: 1rem;
+    }
+    .col-6{
+        flex-basis: 100%;
+
+    }
+    .col-4{
+        padding-top: 1.5rem;
+        flex-basis: 100%;
+    }
+
+}

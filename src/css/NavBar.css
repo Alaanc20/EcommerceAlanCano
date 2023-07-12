@@ -1,0 +1,50 @@
+.navbar{
+    border: solid 2px;
+    border-color: aliceblue;
+    border-bottom-color: rgb(71, 74, 250);
+    box-shadow: 0 0 10px  rgb(83, 71, 250);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+.bg-body-tertiary{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.Option{
+    text-decoration: none;
+    margin: 1rem;
+    color: #5947fa;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+    background-color: #9cdbeb;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px rgb(156, 219, 235);
+    border-radius: 2px;
+}
+.Option:hover{
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #6247fa;
+    transition: 0.4s;
+}
+.ActiveOption{
+    text-decoration: none;
+    margin: 1rem;
+    color: #4771fa;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 600;
+    background-color: #9cdbeb;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #4762fa;
+    border-radius: 2px;
+    margin-left: 9rem;
+    padding: 0.5rem;
+}
+.hamDiv{
+    margin: 1rem;
+    color: #4753fa;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #9cdbeb;
+    box-shadow: 0 0 0 1.5px white, 0 0 0 3px rgb(156, 219, 235);
+    border-radius: 2px;
+    padding: 0.1rem 0.3rem;
+    transform: scale(2);
+
+}
